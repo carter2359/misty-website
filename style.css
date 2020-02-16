@@ -1,5 +1,5 @@
 /* 
-    Date: February 15, 2020
+    Date: February 16, 2020
     Filename: style.css
     Language: CSS
     Editor: Visual Studio Code
@@ -11,6 +11,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* choose background other than plain white */
@@ -30,13 +31,14 @@ h1 {
 
 /* cover photo, caption, button */
 img {
-    height: 650px;
+    height: 600px;
     width: 100%;
 }
 
 .coverCaption {
     position: absolute;
-    top: 84%;
+    bottom: 0%;
+    /* top: 85%; */
     left: 40%;
     transform: translate(-40%, -30%);
     font-weight: 700;
@@ -44,11 +46,14 @@ img {
     font-size: 34px;
     color: white;
     letter-spacing: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 15px;
 }
 
 .btn {
     position: absolute;
-    top: 90%;
+    top: 95%;
     left: 40%;
     margin: 20px auto 0;
     padding: 20px;
@@ -135,19 +140,31 @@ h3 {
 .copyright {
     background-color: black;
     color: whitesmoke;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
+.fa {
+    padding: 10px;
+    font-size: 40px;
+    color: whitesmoke;
+    border-radius: 20%;
+}
+
+.fa:hover {
+    cursor: pointer;
+}
+
 /* sidepanel starts hidden, click to open/close */
+
 .sidepanel {
     float: right;
-    height: 200px;
+    height: 175px;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0%;
+    right: 0%;
     background-color: black;
     overflow-x: hidden;
     padding-top: 60px;
@@ -157,10 +174,11 @@ h3 {
   .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 16px;
+    color: whitesmoke;
     display: block;
     transition: 0.3s;
+    text-transform: uppercase;
   }
   
   .sidepanel a:hover {
@@ -182,8 +200,11 @@ h3 {
     color: whitesmoke;
     padding: 8px 13px;
     border: none;
+    right: 0%;
+
   }
   
   .openbtn:hover {
     background-color: #444;
+    right: 0%;
   }
