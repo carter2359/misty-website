@@ -38,7 +38,6 @@ img {
 .coverCaption {
     position: absolute;
     bottom: 0%;
-    /* top: 85%; */
     left: 40%;
     transform: translate(-40%, -30%);
     font-weight: 700;
@@ -51,7 +50,7 @@ img {
     padding-bottom: 15px;
 }
 
-.btn {
+#coverBtn {
     position: absolute;
     top: 95%;
     left: 40%;
@@ -68,6 +67,15 @@ img {
     color: white;
     font-weight: 600;
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* row of pictures below cover photo and titles for each */
@@ -101,7 +109,6 @@ img:not(.coverPhoto) {
     transition: 1s ease;
     opacity: 0;
     position: absolute;
-    /* top: 50%; */
     left: 50%;
     bottom: 10px;
     transform: translate(-50%, -50%);
@@ -156,7 +163,6 @@ h3 {
 }
 
 /* sidepanel starts hidden, click to open/close */
-
 .sidepanel {
     float: right;
     height: 175px;
