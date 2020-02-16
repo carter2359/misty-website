@@ -1,0 +1,69 @@
+<!-- 
+    Date: February 15, 2020
+    Filename: index.html
+    Language: HTML
+    Editor: Visual Studio Code
+    Operating System Used: Windows 10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misty</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- navigation with side panel -->
+    <div id="nav" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Biography</a>
+        <a href="#">Toys</a>
+        <a href="#">Contact</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+    <!-- title of whole website -->
+    <h1>Misty</h1>
+
+    <!-- cover photo, caption, button -->
+    <div id="cover">
+        <img class = "coverPhoto" src="photos/regal_outside.jpg">
+        <div class = "coverCaption">beautiful, loving, playful, intelligent</div>
+        <button class="btn">See All Photos</button>
+    </div>
+
+    <!-- row of pictures below cover photo -->
+    <div class="row">
+        <div class="column">
+            <img src="photos/studio_pose1.jpg" class="image" style="width: 100%;">
+            <h3>Portraits</h3>
+            <div class="middle">
+                <div class="text">hi</div>
+            </div>
+        </div>
+        <div class="column">
+            <img src="photos/easter_egg.jpg" class="image" style="width: 100%;">
+            <h3>Play</h3>
+            <div class="middle">
+                <div class="text">see portraits</div>
+            </div>
+        </div>
+        <div class="column">
+            <img src="photos/front_lawn1.jpg" class="image" style="width: 100%;">
+            <h3>Outdoor</h3>
+            <div class="middle">
+                <div class="text">see portraits</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom copyright bar -->
+    <div class="copyright">
+        <p>&copy; 2020. All Rights Reserved.</p>
+    </div>
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

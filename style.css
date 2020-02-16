@@ -1,0 +1,189 @@
+/* 
+    Date: February 15, 2020
+    Filename: style.css
+    Language: CSS
+    Editor: Visual Studio Code
+    Operating System Used: Windows 10 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap:200,300,400,500,600,700,900');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* choose background other than plain white */
+body {
+    background-color: whitesmoke;
+}
+
+/* main title in top left */
+h1 {
+    font-weight: 175;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 20px;
+    padding-left: 20px;
+}
+
+/* cover photo, caption, button */
+img {
+    height: 650px;
+    width: 100%;
+}
+
+.coverCaption {
+    position: absolute;
+    top: 84%;
+    left: 40%;
+    transform: translate(-40%, -30%);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 34px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.btn {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    margin: 20px auto 0;
+    padding: 20px;
+    background: rgba(225, 225, 225, 0.5);
+    font-size: 12px; 
+    text-align: center;
+    border: 1px solid white;
+    text-transform: uppercase;
+    text-decoration: transparent;
+    letter-spacing: 4px;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* row of pictures below cover photo and titles for each */
+/* when hover over pictures, make opaque and bring up text */
+img:not(.coverPhoto) {
+    height: 300px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 1s ease;
+    backface-visibility: hidden;
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+}
+
+.middle {
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.column:hover .image {
+    opacity: 0.3;
+}
+
+.column:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4caf50;
+    color: white;
+    font-size: 10px;
+    padding: 10px 5px;
+    position: inherit;
+}
+
+h3 {
+    font-size: 20px;
+    word-break: break-all;
+    position: relative;
+    left: 37%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+/* copyright bar at bottom */
+.copyright {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    text-align: center;
+}
+
+/* sidepanel starts hidden, click to open/close */
+.sidepanel {
+    float: right;
+    height: 200px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0%;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: whitesmoke;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: whitesmoke;
+    padding: 8px 13px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
