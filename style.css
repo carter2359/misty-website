@@ -67,6 +67,7 @@ body {
     padding: 8px 13px;
     border: none;
     right: 0%;
+    position: absolute;
 
   }
   
@@ -94,7 +95,7 @@ img {
 /* caption for cover photo */
 .coverCaption {
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
     left: 40%;
     transform: translate(-40%, -30%);
     font-weight: 700;
@@ -164,17 +165,6 @@ img:not(.coverPhoto) {
     cursor: pointer;
 }
 
-.middle {
-    transition: 1s ease;
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 .column:hover .image {
     opacity: 0.3;
 }
@@ -182,17 +172,6 @@ img:not(.coverPhoto) {
 .column:hover .middle {
     opacity: 1;
     cursor: pointer;
-}
-
-/* bring up text when hover */
-/* doesn't work */
-.text {
-    background-color: #4caf50;
-    color: white;
-    font-size: 10px;
-    padding: 10px 5px;
-    position: relative;
-    text-align: center;
 }
 
 /* captions for each of three pictures in row */
