@@ -1,5 +1,5 @@
 /* 
-    Date: February 16, 2020
+    Date: February 17, 2020
     Filename: style.css
     Language: CSS
     Editor: Visual Studio Code
@@ -179,7 +179,7 @@ h3 {
     font-size: 20px;
     word-break: break-all;
     position: relative;
-    left: 37%;
+    left: 35%;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 20px;

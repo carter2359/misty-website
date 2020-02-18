@@ -1,0 +1,123 @@
+/* 
+    Date: February 17, 2020
+    Filename: constructionPage.css
+    Language: CSS
+    Editor: Visual Studio Code
+    Operating System Used: Windows 10 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap:200,300,400,500,600,700,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* choose background other than plain white */
+body {
+    background-color: whitesmoke;
+}
+
+/* sidepanel starts hidden, click to open/close */
+.sidepanel {
+    float: right;
+    height: 175px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0%;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .sidepanel a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+  
+  /* format close button */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+ 
+  /* format open button */
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: whitesmoke;
+    padding: 8px 13px;
+    border: none;
+    right: 0%;
+    position: absolute;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    right: 0%;
+  }
+
+/* main title in top left */
+h1 {
+    font-weight: 175;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 20px;
+    padding-left: 20px;
+}
+
+h2 {
+    font-weight: 175;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.message {
+    padding: 10px;
+}
+
+/* copyright bar at bottom */
+.copyright {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+
+/* social media icons */
+.fa {
+    padding: 15px;
+    font-size: 40px;
+    color: whitesmoke;
+    border-radius: 20%;
+    text-decoration: none;
+}
+
+.fa:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

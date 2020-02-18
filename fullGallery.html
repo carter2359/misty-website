@@ -1,11 +1,54 @@
+<!-- 
+    Date: February 17, 2020
+    Filename: fullGallery.html
+    Language: HTML
+    Editor: Visual Studio Code
+    Operating System Used: Windows 10
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misty - Full Gallery</title>
+    <title>Misty - Full Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="constructionPage.css">
 </head>
 <body>
+    <!-- navigation with side panel -->
+    <div id="nav" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="toyDetails.html">Toy Details</a>
+        <a href="contactUs.html">Contact Us</a>
+    </div>
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
     
+    <!-- title of whole website -->
+    <h1>Misty</h1>
+    <h2>Image Gallery</h2>
+    <div class="message">
+        <br>
+        <br>
+        <p>Images coming soon.  Please check back later.</p>
+        <br>
+        <br>
+    </div>
+    
+
+    <!-- bottom copyright bar with social media-->
+    <div class="copyright">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+        <br>
+        <p>&copy; 2020 Misty.  All Rights Reserved.</p>
+    </div>
+
+    <script type="text/javascript" src="navbar.js"></script>
 </body>
 </html>
