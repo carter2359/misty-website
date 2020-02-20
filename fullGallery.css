@@ -97,7 +97,21 @@ h2 {
     color: whitesmoke;
 }
 
+h3 {
+    font-weight: 200px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
 /* the image gallery itself */
+
+/* makes all same height! */
+/* img {
+    height: 360px;
+} */
+
 .row1 {
     margin: 8px -16px;
 }
@@ -113,6 +127,66 @@ h2 {
 }
 
 .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2 {
+    margin: 8px -16px; 
+}
+
+.row2,
+.row2 > .column {
+    padding: 8px;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row3 {
+    margin: 8px -16px; 
+}
+
+.row3,
+.row3 > .column {
+    padding: 8px;
+}
+
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row4 {
+    margin: 8px -16px; 
+}
+
+.row4,
+.row4 > .column {
+    padding: 8px;
+}
+
+.row4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row5 {
+    margin: 8px -16px; 
+}
+
+.row5,
+.row5 > .column {
+    padding: 8px;
+}
+
+.row5:after {
     content: "";
     display: table;
     clear: both;
