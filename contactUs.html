@@ -1,5 +1,5 @@
 <!-- 
-    Date: February 17, 2020
+    Date: February 21, 2020
     Filename: contactUs.html
     Language: HTML
     Editor: Visual Studio Code
@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misty - Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="constructionPage.css">
+    <link rel="stylesheet" type="text/css" href="contactUs.css">
 </head>
 <body>
     <!-- navigation with side panel -->
@@ -29,11 +29,41 @@
     <h2>Contact Us</h2>
     <div class="message">
         <br>
-        <br>
-        <p>Webpage under construction.  Please check back later.</p>
-        <br>
-        <br>
+        <h3>Send us a message:</h3>
+        <p>* denotes a required field</p>
     </div>
+
+    <form>
+        <label>First Name *</label>
+        <input type="text" required placeholder="Enter First Name"> <!--placeholder optional here -->
+        <br>
+        <br>
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter Last Name"> <!--placeholder optional here -->
+        <br>
+        <br>
+        <label for="Email">Email *</label>
+        <input type="email" required placeholder="yourname@example.com"> <!--required optional here-->
+        <br>
+        <br>
+        
+        <label>Please Select A Category</label>
+        <select>
+            <option value="" disabled>--Select--</option>
+            <option value="">Request</option>
+            <option value="">Suggestion</option>
+            <option value="">Complaint</option>
+            <option value="">Other</option>
+        </select>
+        <br>
+        <br>
+        <label for="Message">Message *</label>
+        <textarea class="message" rows="10" cols="50"  required placeholder="Please type your message here"></textarea>
+        <br>
+        <!-- submit does not actually do anything -->
+        <input type="submit" value="Submit">
+        <br>
+    </form> 
     
 
     <!-- bottom copyright bar with social media-->
