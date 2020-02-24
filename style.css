@@ -1,5 +1,5 @@
 /* 
-    Date: February 17, 2020
+    Date: February 23, 2020
     Filename: style.css
     Language: CSS
     Editor: Visual Studio Code
@@ -32,9 +32,10 @@ body {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
-  }
+}
 
-  .sidepanel a {
+/* each option in the sidepanel */
+.sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 16px;
@@ -42,24 +43,24 @@ body {
     display: block;
     transition: 0.3s;
     text-transform: uppercase;
-  }
-  
-  .sidepanel a:hover {
+}
+
+.sidepanel a:hover {
     color: whitesmoke;
     text-decoration: underline;
-  }
-  
-  /* format close button */
-  .sidepanel .closebtn {
+}
+
+/* format close button */
+.sidepanel .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
- 
-  /* format open button */
-  .openbtn {
+}
+
+/* format open button */
+.openbtn {
     font-size: 30px;
     cursor: pointer;
     background-color: #111;
@@ -68,15 +69,14 @@ body {
     border: none;
     right: 0%;
     position: absolute;
+}
 
-  }
-  
-  .openbtn:hover {
+.openbtn:hover {
     background-color: #444;
     right: 0%;
-  }
+}
 
-/* main title in top left */
+/* website title */
 h1 {
     font-weight: 175;
     font-size: 50px;
@@ -107,7 +107,7 @@ img {
     white-space: nowrap;
     padding-bottom: 15px;
 }
-/* button on cover photo (to see all photos)  */
+/* button on cover photo  */
 #coverBtn {
     position: absolute;
     top: 95%;

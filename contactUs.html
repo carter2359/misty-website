@@ -1,5 +1,5 @@
 <!-- 
-    Date: February 21, 2020
+    Date: February 23, 2020
     Filename: contactUs.html
     Language: HTML
     Editor: Visual Studio Code
@@ -24,29 +24,35 @@
     </div>
       <button class="openbtn" onclick="openNav()">&#9776;</button>
     
-    <!-- title of whole website -->
+    <!-- website title -->
     <h1>Misty</h1>
+
+    <!-- page title -->
     <h2>Contact Us</h2>
+
+    <!-- instructions -->
     <div class="message">
         <br>
         <h3>Send us a message:</h3>
         <p>* denotes a required field</p>
     </div>
 
+    <!-- website visitor will 'contact Us' 
+        by filling out form with first name,
+        last name, email, subject, message-->
     <form>
         <label>First Name *</label>
-        <input type="text" required placeholder="Enter First Name"> <!--placeholder optional here -->
+        <input type="text" required placeholder="Enter First Name">
         <br>
         <br>
         <label>Last Name</label>
-        <input type="text" placeholder="Enter Last Name"> <!--placeholder optional here -->
+        <input type="text" placeholder="Enter Last Name">
         <br>
         <br>
         <label for="Email">Email *</label>
-        <input type="email" required placeholder="yourname@example.com"> <!--required optional here-->
+        <input type="email" required placeholder="yourname@example.com">
         <br>
         <br>
-        
         <label>Please Select A Category</label>
         <select>
             <option value="" disabled>--Select--</option>
@@ -60,7 +66,8 @@
         <label for="Message">Message *</label>
         <textarea class="message" rows="10" cols="50"  required placeholder="Please type your message here"></textarea>
         <br>
-        <!-- submit does not actually do anything -->
+
+        <!-- submit does not actually do anything yet-->
         <input type="submit" value="Submit">
         <br>
     </form> 

@@ -1,5 +1,5 @@
 /* 
-    Date: February 17, 2020
+    Date: February 23, 2020
     Filename: constructionPage.css
     Language: CSS
     Editor: Visual Studio Code
@@ -34,48 +34,49 @@ body {
     transition: 0.5s;
   }
 
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 16px;
-    color: whitesmoke;
-    display: block;
-    transition: 0.3s;
-    text-transform: uppercase;
-  }
+/* each option in the sidepanel */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
   
-  .sidepanel a:hover {
-    color: whitesmoke;
-    text-decoration: underline;
-  }
-  
-  /* format close button */
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
- 
-  /* format open button */
-  .openbtn {
-    font-size: 30px;
-    cursor: pointer;
-    background-color: #111;
-    color: whitesmoke;
-    padding: 8px 13px;
-    border: none;
-    right: 0%;
-    position: absolute;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-    right: 0%;
-  }
+.sidepanel a:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+}
 
-/* main title in top left */
+/* format close button */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* format open button */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #111;
+  color: whitesmoke;
+  padding: 8px 13px;
+  border: none;
+  right: 0%;
+  position: absolute;
+}
+  
+.openbtn:hover {
+  background-color: #444;
+  right: 0%;
+}
+
+/* website title */
 h1 {
     font-weight: 175;
     font-size: 50px;
@@ -85,6 +86,7 @@ h1 {
     padding-left: 20px;
 }
 
+/* page title */
 h2 {
     font-weight: 175;
     font-size: 26px;
@@ -96,6 +98,7 @@ h2 {
     color: whitesmoke;
 }
 
+/* construction message */
 .message {
     padding: 10px;
 }

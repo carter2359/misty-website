@@ -1,17 +1,17 @@
 /* 
-    Date: February 17, 2020
-    Filename: navbar.js
-    Language: JavaScript
-    Editor: Visual Studio Code
-    Operating System Used: Windows 10 
+  Date: February 23, 2020
+  Filename: navbar.js
+  Language: JavaScript
+  Editor: Visual Studio Code
+  Operating System Used: Windows 10 
 */
 
 /* show side panel */
 function openNav() {
-    document.getElementById("nav").style.width = "200px";
-  }
+  document.getElementById("nav").style.width = "200px";
+}
   
-  /* hide side panel */
-  function closeNav() {
-    document.getElementById("nav").style.width = "0";
-  }
+/* hide side panel */
+function closeNav() {
+  document.getElementById("nav").style.width = "0";
+}
