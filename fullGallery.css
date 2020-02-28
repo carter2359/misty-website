@@ -1,5 +1,5 @@
 /* 
-    Date: February 22, 2020
+    Date: February 27, 2020
     Filename: fullGallery.css
     Language: HTML
     Editor: Visual Studio Code
@@ -9,10 +9,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap:200,300,400,500,600,700,900');
 
 *{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
     box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
 }
 
 /* choose background other than plain white */
@@ -22,28 +22,28 @@ body {
 
 /* sidepanel starts hidden, click to open/close */
 .sidepanel {
+    background-color: black;
     float: right;
     height: 250px;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0%;
-    background-color: black;
     overflow-x: hidden;
     padding-top: 60px;
+    position: fixed;
+    right: 0%;
+    top: 0;
     transition: 0.5s;
+    width: 0;
+    z-index: 1;
 }
 
 /* each option in the sidepanel */
 .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 16px;
     color: whitesmoke;
     display: block;
-    transition: 0.3s;
+    font-size: 16px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
     text-transform: uppercase;
+    transition: 0.3s;
 }
   
 .sidepanel a:hover {
@@ -53,23 +53,23 @@ body {
   
 /* format close button */
 .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    position: absolute;
+    right: 25px;
+    top: 0;
 }
  
 /* format open button */
 .openbtn {
-    font-size: 30px;
-    cursor: pointer;
     background-color: #111;
-    color: whitesmoke;
-    padding: 8px 13px;
     border: none;
-    right: 0%;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 8px 13px;
     position: absolute;
+    right: 0%;
 }
   
 .openbtn:hover {
@@ -79,33 +79,33 @@ body {
 
 /* website title */
 h1 {
-    font-weight: 175;
     font-size: 50px;
-    text-transform: uppercase;
+    font-weight: 175;
     letter-spacing: 5px;
     padding: 20px;
     padding-left: 20px;
+    text-transform: uppercase;
 }
 
 /* page title */
 h2 {
-    font-weight: 175;
+    background-color: black;
+    color: whitesmoke;
     font-size: 26px;
-    text-transform: uppercase;
+    font-weight: 175;
     letter-spacing: 5px;
     padding: 10px;
     padding-left: 50px;
-    background-color: black;
-    color: whitesmoke;
+    text-transform: uppercase;
 }
 
 /* captions */
 h3 {
-    font-weight: 200px;
     font-size: 14px;
-    text-transform: uppercase;
+    font-weight: 200px;
     letter-spacing: 2px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* format gallery */
@@ -124,9 +124,9 @@ h3 {
 }
 
 .tall:after {
+    clear: both;
     content: "";
     display: table;
-    clear: both;
 }
 
 .short {
@@ -139,9 +139,9 @@ h3 {
 }
 
 .short:after {
+    clear: both;
     content: "";
     display: table;
-    clear: both;
 }
 
 .content {
@@ -151,14 +151,14 @@ h3 {
 
 /* image styling for rows 1, 4, and 5 */
 .rows145 {
-    width: 100%;
     height: 400px;
+    width: 100%;
 }
 
 /* image styling for rows 2 and 3 */
 .rows23 {
-    width: 100%;
     height: 250px;
+    width: 100%;
 }
 
 /* number of pictures across
@@ -185,10 +185,10 @@ depends on width of window */
 
 /* social media icons */
 .fa {
-    padding: 15px;
-    font-size: 40px;
-    color: whitesmoke;
     border-radius: 20%;
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 15px;
     text-decoration: none;
 }
 

@@ -1,48 +1,48 @@
 /* 
-    Date: February 23, 2020
-    Filename: constructionPage.css
-    Language: CSS
-    Editor: Visual Studio Code
-    Operating System Used: Windows 10 
+  Date: February 27, 2020
+  Filename: constructionPage.css
+  Language: CSS
+  Editor: Visual Studio Code
+  Operating System Used: Windows 10 
 */
 
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap:200,300,400,500,600,700,900');
 
 *{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
 }
 
 /* choose background other than plain white */
 body {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 /* sidepanel starts hidden, click to open/close */
 .sidepanel {
-    float: right;
-    height: 175px;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0%;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-  }
+  background-color: black;
+  float: right;
+  height: 175px;
+  overflow-x: hidden;
+  padding-top: 60px;
+  position: fixed;
+  right: 0%;
+  top: 0;
+  transition: 0.5s;
+  width: 0;
+  z-index: 1;
+}
 
 /* each option in the sidepanel */
 .sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 16px;
   color: whitesmoke;
   display: block;
-  transition: 0.3s;
+  font-size: 16px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
   text-transform: uppercase;
+  transition: 0.3s;
 }
   
 .sidepanel a:hover {
@@ -52,23 +52,23 @@ body {
 
 /* format close button */
 .sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  position: absolute;
+  right: 25px;
+  top: 0;
 }
 
 /* format open button */
 .openbtn {
-  font-size: 30px;
-  cursor: pointer;
   background-color: #111;
-  color: whitesmoke;
-  padding: 8px 13px;
   border: none;
-  right: 0%;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 8px 13px;
   position: absolute;
+  right: 0%;
 }
   
 .openbtn:hover {
@@ -78,49 +78,49 @@ body {
 
 /* website title */
 h1 {
-    font-weight: 175;
-    font-size: 50px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    padding: 20px;
-    padding-left: 20px;
+  font-size: 50px;
+  font-weight: 175;
+  letter-spacing: 5px;
+  padding: 20px;
+  padding-left: 20px;
+  text-transform: uppercase;
 }
 
 /* page title */
 h2 {
-    font-weight: 175;
-    font-size: 26px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: black;
-    color: whitesmoke;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 26px;
+  font-weight: 175;
+  letter-spacing: 5px;
+  padding: 10px;
+  padding-left: 50px;
+  text-transform: uppercase;
 }
 
 /* construction message */
 .message {
-    padding: 10px;
+  padding: 10px;
 }
 
 /* copyright bar at bottom */
 .copyright {
-    background-color: black;
-    color: whitesmoke;
-    padding: 10px;
-    text-align: center;
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px;
+  text-align: center;
 }
 
 /* social media icons */
 .fa {
-    padding: 15px;
-    font-size: 40px;
-    color: whitesmoke;
-    border-radius: 20%;
-    text-decoration: none;
+  border-radius: 20%;
+  color: whitesmoke;
+  font-size: 40px;
+  padding: 15px;
+  text-decoration: none;
 }
 
 .fa:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }

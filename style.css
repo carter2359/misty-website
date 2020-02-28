@@ -1,5 +1,5 @@
 /* 
-    Date: February 23, 2020
+    Date: February 27, 2020
     Filename: style.css
     Language: CSS
     Editor: Visual Studio Code
@@ -10,8 +10,8 @@
 
 *{
     margin: 0;
-    padding: 0;
     overflow-x: hidden;
+    padding: 0;
 }
 
 /* choose background other than plain white */
@@ -21,28 +21,28 @@ body {
 
 /* sidepanel starts hidden, click to open/close */
 .sidepanel {
+    background-color: black;
     float: right;
     height: 175px;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0%;
-    background-color: black;
     overflow-x: hidden;
     padding-top: 60px;
+    position: fixed;
+    right: 0%;
+    top: 0;
     transition: 0.5s;
+    width: 0;
+    z-index: 1;
 }
 
 /* each option in the sidepanel */
 .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 16px;
     color: whitesmoke;
     display: block;
-    transition: 0.3s;
+    font-size: 16px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .sidepanel a:hover {
@@ -52,23 +52,23 @@ body {
 
 /* format close button */
 .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    position: absolute;
+    right: 25px;
+    top: 0;
 }
 
 /* format open button */
 .openbtn {
-    font-size: 30px;
-    cursor: pointer;
     background-color: #111;
-    color: whitesmoke;
-    padding: 8px 13px;
     border: none;
-    right: 0%;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 8px 13px;
     position: absolute;
+    right: 0%;
 }
 
 .openbtn:hover {
@@ -78,12 +78,12 @@ body {
 
 /* website title */
 h1 {
-    font-weight: 175;
     font-size: 50px;
-    text-transform: uppercase;
+    font-weight: 175;
     letter-spacing: 5px;
     padding: 20px;
     padding-left: 20px;
+    text-transform: uppercase;
 }
 
 /* cover photo */
@@ -94,43 +94,43 @@ img {
 
 /* caption for cover photo */
 .coverCaption {
-    position: absolute;
     bottom: 5%;
-    left: 40%;
-    transform: translate(-40%, -30%);
-    font-weight: 700;
-    font-style: italic;
-    font-size: 34px;
     color: white;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 700;
+    left: 40%;
     letter-spacing: 5px;
     overflow: hidden;
-    white-space: nowrap;
     padding-bottom: 15px;
+    position: absolute;
+    transform: translate(-40%, -30%);
+    white-space: nowrap;
 }
 /* button on cover photo  */
 #coverBtn {
-    position: absolute;
-    top: 95%;
-    left: 40%;
-    margin: 20px auto 0;
-    padding: 20px;
     background: rgba(225, 225, 225, 0.5);
-    font-size: 12px; 
-    text-align: center;
     border: 1px solid white;
-    text-transform: uppercase;
-    text-decoration: transparent;
-    letter-spacing: 4px;
-    outline: none;
     color: white;
-    font-weight: 600;
     cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    left: 40%;
+    letter-spacing: 4px;
+    margin: 20px auto 0;
+    outline: none;
+    padding: 20px; 
+    position: absolute;
+    text-align: center;
+    text-decoration: transparent;
+    text-transform: uppercase;
+    top: 95%;
 }
 
 /* text on button on cover photo */
 a {
-    text-decoration: none;
     color: whitesmoke;
+    text-decoration: none;
 }
 
 a:hover {
@@ -154,15 +154,14 @@ img:not(.coverPhoto) {
 
 /* opaque when hover over pictures */
 .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: 1s ease;
     backface-visibility: hidden;
-    position: relative;
-    width: 50%;
     cursor: pointer;
+    display: block;
+    height: auto;
+    opacity: 1;
+    position: relative;
+    transition: 1s ease;
+    width: 100%;
 }
 
 .column:hover .image {
@@ -170,20 +169,20 @@ img:not(.coverPhoto) {
 }
 
 .column:hover .middle {
-    opacity: 1;
     cursor: pointer;
+    opacity: 1;
 }
 
 /* captions for each of three pictures in row */
 h3 {
     font-size: 20px;
-    word-break: break-all;
-    position: relative;
     left: 35%;
-    text-transform: uppercase;
     letter-spacing: 2px;
     padding: 20px;
     padding-top: 10px;
+    position: relative;
+    text-transform: uppercase;
+    word-break: break-all;
 }
 
 /* copyright bar at bottom */
@@ -196,10 +195,10 @@ h3 {
 
 /* social media icons */
 .fa {
-    padding: 15px;
-    font-size: 40px;
-    color: whitesmoke;
     border-radius: 20%;
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 15px;
 }
 
 .fa:hover {
