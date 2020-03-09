@@ -6,6 +6,6 @@ It uses HTML, CSS and some JavaScript to create an interactive website for a dog
 
 ------------------------------------------------------
 Acknowlegements:
-- @eetar1
+- [@eetar1](https://github.com/eetar1)
 - Stack Overflow
 - W3Schools
